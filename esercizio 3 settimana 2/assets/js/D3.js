@@ -1,5 +1,3 @@
-const { gray } = require("d3-color");
-
 const starWarsCharacters = [
   {
     name: 'Luke Skywalker',
@@ -106,80 +104,52 @@ const starWarsCharacters = [
 /* ESERCIZIO 1
   Crea una variabile chiamata "charactersNames" e assegnale un array vuoto
 */
- const charactersNames=[]
+ const charactersNames=[];
  console.log(charactersNames);
+
 /* ESERCIZIO 2
   Utilizzando un ciclo for, cicla l'array "starWarsCharacters".
   Dovrai accedere alla proprietà "name" di ogni oggetto in esso contenuto, e inserirla nell'array "charactersNames" creato precedentemente.
   Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
-for(let i=0; i < starWarsCharacters.length; i++ ){
 
+for(let i=0; i < starWarsCharacters.length; i++ ){
+    charactersNames.push(starWarsCharacters[i].name);
 }
+
+console.log(charactersNames);
+
+
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno tutti gli oggetti femminili.
 */
 
-/*const femaleCharacters = [
-  {
-    name: 'Leia Organa',
-    height: 150,
-    mass: 49,
-    hair_color: 'brown',
-    skin_color: 'light',
-    eye_color: 'brown',
-    birth_year: '19BBY',
-    gender: 'female',
-  },
-  {
-    name: 'Beru Whitesun lars',
-    height: 165,
-    mass: 75,
-    hair_color: 'brown',
-    skin_color: 'light',
-    eye_color: 'blue',
-    birth_year: '47BBY',
-    gender: 'female',
-  },
-  {
-    name: 'Beru Whitesun lars',
-    height: 165,
-    mass: 75,
-    hair_color: 'brown',
-    skin_color: 'light',
-    eye_color: 'blue',
-    birth_year: '47BBY',
-    gender: 'female',
-  },
-]
+const femaleCharacters = [];
+for(let i=0;i<starWarsCharacters.length;i++){
+  if(starWarsCharacters[i].gender==='female'){
+    femaleCharacters.push(starWarsCharacters[i]);
+  }
+}
 console.log(femaleCharacters);
 
 /* ESERCIZIO 4
   Crea un oggetto "eyeColor" che abbia le seguenti proprietà: blue, yellow, brown, red, blue-gray.
   Ad ognuna di queste proprietà assegna come valore un array vuoto.
 */
-var eyeColor;
-Object.create= {
+const eyeColor={
   blue:[],
   yellow:[],
   brown:[],
   red:[],
-  bluegrey:[],
+  'blue-grey':[]
 }
+console.log(eyeColor);
+
 /* ESERCIZIO 5
   Utilizza uno switch statement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
-let statement = new Object();
-var eyeColor = new Object();
-switch (statement){
-  case 0:
-    statement = 'Luke Skywalker' + blue;
-    break;
-  case 1:
-    
-}
-console.log(statement)
+
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
