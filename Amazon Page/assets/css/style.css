@@ -1,0 +1,140 @@
+/* Your styles here */
+html{
+    font-size: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center center;
+    margin: 0;
+}
+
+header{
+    background-color: #232F3E;
+    font-weight: 100;
+}
+
+.main
+{
+    background-color: #364757;
+    display: inline-block;
+    flex-direction:row;
+    font-size: 14px;
+    color: white;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.main2{
+    margin: 5px 40px;
+    display: inline-block;
+}
+
+.testo
+{
+    text-align: center;
+    align-items: center;
+}
+
+.button
+{
+    background: #F76401;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.imgContainer 
+{
+    position: relative;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 100%;
+}
+
+.card
+{
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,0.2);
+    font-weight: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    align-items: center;
+    text-align: center;
+    margin:10 auto;
+    display: inline-block;
+    width: 100%;
+}
+
+.img1{
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px 10px;
+}
+
+.img2{
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px 10px;
+}
+
+.img3{
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 10px 10px;
+}
+
+.img4{
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px 10px;
+}
+
+h2{
+    text-align: left;
+}
+h3{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer, #decorazione{
+    background-color: #364757;
+    display: inline-block;
+    flex-direction:row;
+    font-size: 14px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+div.finale{
+    background-color: #232F3E;
+    font-weight: 100;
+    text-align: center;
+    display: block ;
+}
+
+.sovrapposta2{
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    z-index: -2;
+}
+
+.sovrapposta1{
+    position: relative;
+    left: 0px;
+    top: 1px;
+    z-index: -1;
+}
